@@ -28,6 +28,8 @@ x = scaler.transform(x)  # Transformando os dados
 from sklearn.model_selection import train_test_split  # Importando o modulo de treino
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.20)  # Treino do modelo
 
+
+# Esse modelo foi escolhido pq o dataset é de classificação e na minha opiniao ele é o que se adapta mais
 from sklearn.neighbors import KNeighborsClassifier
 classifier = KNeighborsClassifier(n_neighbors = 5)  # O 5 é o padrao
 classifier.fit(x_train, y_train) 
